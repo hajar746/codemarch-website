@@ -1,0 +1,393 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Fira Sans", sans-serif;
+  scroll-behavior: smooth;
+}
+
+:root {
+  --primary-color: #0d0014;
+  --secondary-color: #8c2484;
+}
+
+/* NAVBAR AND HERO SECTION */
+
+header {
+  height: auto;
+  width: 100%;
+  padding: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  position: sticky;
+  background-color: var(--primary-color);
+  color: whitesmoke;
+}
+
+.logo-img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  border: 1.5px solid whitesmoke;
+}
+
+.logo {
+  display: flex;
+  gap: 8px;
+}
+
+h2.logo-name {
+  padding-top: 5px;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0.4rem 0.6rem;
+  color: whitesmoke;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+}
+
+.hero {
+  display: flex;
+  height: 85vh;
+  background-color: #fdf2e9;
+  gap: 5rem;
+}
+
+.hero-img {
+  height: 450px;
+  width: 40%;
+  align-self: flex-end;
+}
+
+.hero-sec {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 450px;
+  gap: 1.5rem;
+}
+
+.hero-sec h1 {
+  font-size: 2.5rem;
+}
+
+span {
+  color: var(--secondary-color);
+}
+
+.hero-sec p {
+  font-size: 1.1rem;
+}
+
+.btn {
+  background-color: var(--secondary-color);
+  width: 150px;
+  padding: 1rem;
+  font-size: 1.3rem;
+  color: whitesmoke;
+  border: none;
+  border-radius: 8px;
+  box-shadow: 6px 6px 5px #671a60;
+}
+
+.btn:hover {
+  cursor: pointer;
+  background-color: #9b3b93;
+  transform: translateY(2px);
+  transition: all 0.3s ease-out;
+  box-shadow: 3px 3px 5px #671a60;
+}
+
+.hero-small {
+  display: flex;
+}
+
+.small-pics {
+  height: 3rem;
+  width: 3rem;
+  border-radius: 50%;
+  border: 1.5px solid #fdf2e9;
+  margin-left: -15px;
+}
+
+.hero-small p {
+  align-self: flex-end;
+  margin-left: 1rem;
+  margin-bottom: 1rem;
+}
+
+/* SERVICE SECTION */
+
+.service {
+  height: auto;
+  background-color: var(--primary-color);
+}
+
+.service h2,
+.service p {
+  color: whitesmoke;
+  text-align: center;
+  padding: 20px;
+}
+
+.service h2 {
+  padding-top: 3rem;
+}
+
+.services {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 3rem;
+  margin: 0rem 5rem;
+  padding: 2rem;
+}
+
+.services div {
+  background-color: #423b42;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: auto;
+  width: auto;
+  padding: 0.5rem;
+  border-radius: 0 20% 0 20%;
+}
+
+.services h3 {
+  color: whitesmoke;
+  padding: 0.5rem;
+}
+
+.services p {
+  line-height: 1.5rem;
+  color: rgb(166, 156, 164);
+  text-align: start;
+}
+
+.services a {
+  color: whitesmoke;
+  padding: 1rem 1.5rem;
+}
+
+/* TESTIMONIAL SECTION */
+
+.testimonials {
+  height: auto;
+  background-color: #fdf2e9;
+}
+
+.testimonials h2 {
+  text-align: center;
+  padding: 2.5rem;
+}
+
+.test-cards {
+  display: flex;
+}
+
+.card {
+  background-color: white;
+  margin: 2rem;
+  text-align: center;
+  /* border-radius: 0 30% 0 30%; */
+  padding: 1rem;
+}
+
+.card p {
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.card span {
+  font-size: 5rem;
+  display: block;
+  text-align: center;
+}
+
+.card h3 {
+  padding: 10px;
+}
+
+.test-pic {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+
+/* CONTACT SESSION */
+.contact {
+  height: auto;
+  display: flex;
+  background-color: #fdf2e9;
+  padding: 4rem;
+}
+
+.contact-form {
+  display: flex;
+  background-color: white;
+  height: 75vh;
+  width: 100%;
+  border-radius: 50px 0 50px 0;
+  padding: 1rem;
+}
+
+.form {
+  flex-grow: 2;
+}
+
+.contact-form h1,
+.contact-form p {
+  margin: 1.5rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+  display: block;
+  margin: 2rem;
+  padding: 0.5rem;
+  width: 80%;
+  border: none;
+  border-bottom: 1.5px solid var(--primary-color);
+}
+
+.contact-form button {
+  display: block;
+  margin: 2rem;
+  padding: 0.7rem;
+  width: 200px;
+}
+
+.contact-imgs {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.contact-imgs img {
+  height: 110px;
+  width: 160px;
+  box-shadow: 4px 4px 5px var(--secondary-color),
+    -1px -1px 5px var(--secondary-color);
+}
+
+img.img2 {
+  align-self: center;
+}
+
+.follow-img {
+  height: 2rem;
+  width: 2rem;
+}
+
+/* FOOTER SECTION */
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  height: auto;
+  background-color: var(--primary-color);
+}
+
+.follow a {
+  padding: 1rem;
+}
+
+.useful a {
+  display: block;
+  padding: 0.5rem;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+footer h3 {
+  padding: 2rem 1rem;
+  color: whitesmoke;
+  text-decoration: underline var(--secondary-color);
+}
+
+footer p {
+  color: whitesmoke;
+}
+
+.email input,
+.email button {
+  font-size: 1.5rem;
+  padding: 0.8rem;
+  margin-top: 1rem;
+}
+
+.btn-subs {
+  background-color: var(--secondary-color);
+  border: none;
+  margin-left: -4px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 850px) {
+  .hero-img {
+    display: none;
+  }
+
+  .hero-sec {
+    width: 800px;
+    margin: 2rem;
+  }
+
+  .services {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .test-cards {
+    flex-direction: column;
+    height: auto;
+  }
+
+  .card {
+    display: flex;
+  }
+
+  .test-pic {
+    display: none;
+  }
+
+  .contact-imgs img {
+    display: none;
+  }
+
+  .contact-form {
+    width: auto;
+  }
+}
+
+@media screen and (max-width: 730px) {
+  header,
+  footer {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .useful a {
+    display: inline-block;
+  }
+
+  .subscribe {
+    padding-bottom: 1rem;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .services div {
+    height: 300px;
+    width: 250px;
+  }
+}
